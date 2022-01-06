@@ -5,7 +5,7 @@ import json
 
 cwd = ""
 with open("cwd.txt", 'r') as file:
-    cwd = file.readlines()
+    cwd = file.readlines()[0]
 
 file = open(cwd + "/statuscodes.json", "r")
 lines = file.read()
