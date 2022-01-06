@@ -28,7 +28,8 @@ Then run the command for cloning the repository
 git clone https://github.com/eidsheim98/HTTPStatusCode.git
 ```
 
-Next, add this folder to path, to be able to run the file from anywhere on the computer
+Next, add this folder to path, to be able to run the file from anywhere on the computer. 
+This line has to be run as administrator
 
 ```bash
 set PATH=%PATH%;C:/Users/{username}/.cmd
