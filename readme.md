@@ -6,9 +6,31 @@ descriptions are retrieved from https://developer.mozilla.org/en-US/docs/Web/HTT
 
 ## Installation
 
+### Linux
+
+Clone the repository into desired folder
+
+```bash
+git clone https://github.com/eidsheim98/HTTPStatusCode.git
+```
+
+After this, change directory into HTTPStatusCode folder
+
+```bash
+cd HTTPStatusCode
+```
+
+The last step is to run the setup.py file
+
+```bash
+python3 setup.py
+```
+
+If no errors are encountered, you are good to go!
+
 ### Windows
 
-Start by cloning this repository into a desired folder. To run the program from anywhere in the terminal, 
+Start by cloning this repository into a desired folder. To run the program from anywhere in the terminal,
 I would recommend creating a specific folder i an easy-to-remember location you would not need administrative
 rights to edit. This could for instance be in a folder called
 
@@ -28,7 +50,7 @@ Then run the command for cloning the repository
 git clone https://github.com/eidsheim98/HTTPStatusCode.git
 ```
 
-Next, add this folder to path, to be able to run the file from anywhere on the computer. 
+Next, add this folder to path, to be able to run the file from anywhere on the computer.
 This line has to be run as administrator
 
 ```bash
@@ -48,11 +70,6 @@ python setup.py
 ```
 
 If no errors are encountered, you are good to go!
-
-### Linux
-
-Linux support is currently in development
-
 
 ## Usage
 
