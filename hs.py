@@ -8,7 +8,7 @@ file_path = os.path.abspath(__file__) # full path of your script
 dir_path = os.path.dirname(file_path) # full path of the directory of your script
 codes_path = os.path.join(dir_path,'statuscodes.json')
 
-with open(codes_path + "/statuscodes.json", "r") as file:
+with open(codes_path, "r") as file:
     lines = file.read()
     j = json.loads(lines)
 
