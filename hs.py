@@ -2,14 +2,15 @@
 
 import sys
 import json
+import os
 
-cwd = ""
-with open("cwd.txt", 'r') as file:
-    cwd = file.readlines()[0]
+file_path = os.path.abspath(__file__) # full path of your script
+dir_path = os.path.dirname(file_path) # full path of the directory of your script
+codes_path = os.path.join(dir_path,'statuscodes.json')
 
-file = open(cwd + "/statuscodes.json", "r")
-lines = file.read()
-j = json.loads(lines)
+with open(codes_path + "/statuscodes.json", "r") as file:
+    lines = file.read()
+    j = json.loads(lines)
 
 types = {1: "Informational Response", 2: "Successful Response", 3: "Redirection Message",
          4: "Client Error Message", 5: "Server Error Response"}
